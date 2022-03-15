@@ -80,44 +80,11 @@ button:hover{
     background: #000915;
 }
 
-
-
 .product{
     width: ($widthSite - 2 * $gap) / 3;
     height: 268px; //300-32
     width: 347px; //379-32
 }
-
-/*
-.for{
-
-    &_items{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        gap: 32px;
-        padding-top: 128px;
-        padding-bottom: 128px;
-    }
-
-    &_item{
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        //border: none;
-        border-radius: 16px;
-            display: flex;
-            align-items: flex-end;
-            padding-left: 32px;
-            padding-bottom: 32px;
-                font-weight: 300;
-                font-size: 24px;
-                color: $colorSelect;  
-    }
-}
-*/
-
 
 .for{
     padding-top: 128px;
