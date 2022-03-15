@@ -1,0 +1,75 @@
+@media (max-width: 767px){
+
+    .img{
+        max-width: 100%;
+    }
+
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top{
+        height: 735px;
+        background-image: url(img/bg-skypro2077-mobile.jpg);
+        border: none;
+    
+        &_text{
+            max-width: 343px;
+            font-size: 14px;
+            text-align: center;
+            align-items: center;
+        }
+    
+        &_description{
+            max-width: 343px;  
+        }
+
+        &_title{    
+            max-width: 343px;
+            padding-top: 239px;
+            text-align: center;
+                font-family: 'Montserrat';
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+                color: $colorSelect;
+        }    
+    }
+
+    /*
+    .for{
+        &_items{
+            flex-direction: column;
+            //padding-right: -100px;
+        }
+
+        &_item_1{
+            background-image: url(img/game-1.jpg);
+            width: 343px;
+        }
+
+        &_item_2{
+            background-image: url(img/game-2.jpg);
+        }
+
+        &_item_3{
+            background-image: url(img/game-3.jpg);
+        }
+    }
+}
+*/
+
+    .for{
+        &_grid{
+            grid-template-columns: repeat(4,1fr);
+        }
+        &_item{
+            grid-column: 1 / -1;
+        }
+    }
+
+    .product{
+        width: 311px; //343-32
+    }
+}

@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top {
+  min-height: 1024px;
+  background-image: url(img/bg-skypro2077.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.top_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+
+.top_description {
+  width: 481px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.top_title {
+  width: 750px;
+  padding-top: 217px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: #ffffff;
+}
+
+.top_button {
+  width: 234px;
+  height: 48px;
+  background: #9C0332;
+  border-radius: 30px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+span.bold {
+  font-weight: bold;
+}
+
+button:hover {
+  -webkit-box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.25);
+          box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.25);
+}
+
+.footer {
+  background: #000915;
+}
+
+.product {
+  width: 378.66667px;
+  height: 268px;
+  width: 347px;
+}
+
+/*
+.for{
+
+    &_items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 32px;
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+
+    &_item{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        //border: none;
+        border-radius: 16px;
+            display: flex;
+            align-items: flex-end;
+            padding-left: 32px;
+            padding-bottom: 32px;
+                font-weight: 300;
+                font-size: 24px;
+                color: $colorSelect;  
+    }
+}
+*/
+.for {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.for_grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 32px;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.for_item {
+  grid-column: span 4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 300;
+  font-size: 24px;
+  color: #ffffff;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 32px;
+  padding-left: 32px;
+}
+
+.for_item:hover {
+  font-size: 32px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.for_item_1 {
+  background-image: url(img/game-1.jpg);
+}
+
+.for_item_2 {
+  background-image: url(img/game-2.jpg);
+}
+
+.for_item_3 {
+  background-image: url(img/game-3.jpg);
+}
+
+@media (max-width: 767px) {
+  .img {
+    max-width: 100%;
+  }
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 735px;
+    background-image: url(img/bg-skypro2077-mobile.jpg);
+    border: none;
+  }
+  .top_text {
+    max-width: 343px;
+    font-size: 14px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .top_description {
+    max-width: 343px;
+  }
+  .top_title {
+    max-width: 343px;
+    padding-top: 239px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #ffffff;
+  }
+  /*
+    .for{
+        &_items{
+            flex-direction: column;
+            //padding-right: -100px;
+        }
+
+        &_item_1{
+            background-image: url(img/game-1.jpg);
+            width: 343px;
+        }
+
+        &_item_2{
+            background-image: url(img/game-2.jpg);
+        }
+
+        &_item_3{
+            background-image: url(img/game-3.jpg);
+        }
+    }
+}
+*/
+  .for_grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .for_item {
+    grid-column: 1 / -1;
+  }
+  .product {
+    width: 311px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
